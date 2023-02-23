@@ -1,21 +1,23 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Courses from "./Pages/Dashboard/Courses";
-import Dashboard from "./Pages/Dashboard/Dashboard";
-import DashIndex from "./Pages/Dashboard/DashIndex";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Dashboard></Dashboard>}>
-          <Route index element={<DashIndex></DashIndex>}></Route>
-          <Route path="courses" element={<Courses></Courses>}></Route>
-        </Route>
-      </Routes>
-      <ToastContainer />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
