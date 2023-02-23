@@ -1,0 +1,11 @@
+.icon-tool {
+  visibility: hidden;
+}
+
+tr:hover > .icon-tool {
+  visibility: visible;
+}
+
+tbody > tr {
+  cursor: pointer;
+}
